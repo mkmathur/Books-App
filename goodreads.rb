@@ -17,3 +17,8 @@ while accepted == 'n' do
 end
 access_token = request_token.get_access_token
 
+response = access_token.post('/review/list?format=xml&v=2', {
+             'shelf' => 'to-read',
+           })
+
+puts response.body
