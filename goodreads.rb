@@ -1,6 +1,8 @@
 require 'rubygems'
 require 'bundler/setup'  
 require 'oauth'
+require 'rexml/document'
+include REXML
 
 KEY = "Yf6QamFRu4dL3dhbz237Sw"
 SECRET = "RrkCTmZIS8zuNsjuNf412vaZmlHHJ17W6pRRVsr4"
@@ -41,4 +43,15 @@ response = access_token.post('/review/list?format=xml&v=2', {
              'shelf' => 'to-read',
            })
 
-shelf = response.body
+# Save the XML to a file so I can look at it
+File.open('xml_doc.xml', 'w') do |f|
+	f.puts response.body
+end
+
+doc = Document.new response.body
+
+books = XPath.match( doc, "//book" )
+books.each do |book|
+	puts book.elements["title"].text
+	puts book.elements["isbn"].text
+end
