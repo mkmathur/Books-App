@@ -1,8 +1,10 @@
 require 'rubygems'
 require 'sinatra'
 require 'Haml'
+require './goodreads_module'
+include Goodreads
 
 get '/' do
-	@url = "http://www.goodreads.com"
+	@url = Goodreads.url
 	haml :index
 end

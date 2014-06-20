@@ -15,14 +15,14 @@ MY_ACCESS_TOKEN_SECRET = "7lJhrwVad6Txy3yC1ws2y0J5tphC9MPaCJ9jaGFro"
 =begin
 # for a single session. todo: save the access token and secret somewhere
 consumer = OAuth::Consumer.new(KEY,
-                              SECRET,
-                               :site => "http://www.goodreads.com")
+							SECRET,
+							 :site => "http://www.goodreads.com")
 request_token = consumer.get_request_token
 puts "Visit this URL: " + request_token.authorize_url
 accepted = "n"
 while accepted == 'n' do
-	print "Have you authorized me? (y/n) "
-	accepted = gets.chomp()
+print "Have you authorized me? (y/n) "
+accepted = gets.chomp()
 end
 access_token = request_token.get_access_token
 
@@ -36,13 +36,13 @@ puts ACCESS_TOKEN_SECRET
 
 # in subsequent sessions, we'll rebuild the access token
 consumer = OAuth::Consumer.new(KEY,
-                               SECRET,
-                               :site => 'http://www.goodreads.com')
+							 SECRET,
+							 :site => 'http://www.goodreads.com')
 access_token = OAuth::AccessToken.new(consumer, MY_ACCESS_TOKEN, MY_ACCESS_TOKEN_SECRET)
 
 response = access_token.post('/review/list?format=xml&v=2', {
-             'shelf' => 'to-read',
-           })
+		   'shelf' => 'to-read',
+		 })
 
 # Save the XML to a file so I can look at it
 File.open('xml_doc.xml', 'w') do |f|

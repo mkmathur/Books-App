@@ -5,14 +5,14 @@
       <key><![CDATA[Yf6QamFRu4dL3dhbz237Sw]]></key>
     <method><![CDATA[review_list]]></method>
   </Request>
-  <reviews start="1" end="20" total="151">
+  <reviews start="1" end="20" total="153">
     <review>
   <id>810464269</id>
     <book>
   <id type="integer">546018</id>
   <isbn>0440174643</isbn>
   <isbn13>9780440174646</isbn13>
-  <text_reviews_count type="integer">1573</text_reviews_count>
+  <text_reviews_count type="integer">1574</text_reviews_count>
   <title>Roots: The Saga of an American Family</title>
   <image_url>http://d.gr-assets.com/books/1329398936m/546018.jpg</image_url>
   <small_image_url>http://d.gr-assets.com/books/1329398936s/546018.jpg</small_image_url>
@@ -25,7 +25,7 @@
   <publication_year>1980</publication_year>
   <publication_month>10</publication_month>
   <average_rating>4.39</average_rating>
-  <ratings_count>84191</ratings_count>
+  <ratings_count>84245</ratings_count>
   <description>When he was a boy in Henning, Tennessee, Alex Haley's grandmother used to tell him stories about their family—stories that went back to &lt;em&gt;her&lt;/em&gt; grandparents, and &lt;em&gt;their&lt;/em&gt; grandparents, down through the generations all the way to a man she called "the African."  She said he had lived across the ocean near what he called the "&lt;em&gt;Kamby Bolongo&lt;/em&gt;" and had been out in the forest one day chopping wood to make a drum when he was set upon by four men, beaten, chained and dragged aboard a slave ship bound for Colonial America.&lt;br&gt;&lt;br&gt;Still vividly remembering the stories after he grew up and became a writer, Haley began to search for documentation that might authenticate the narrative.  It took ten years and a half a million miles of travel across three continents to find it, but finally, in an astonishing feat of genealogical detective work, he discovered not only the name of "the African"--Kunta Kinte—but the precise location of Juffure, the very village in The Gambia, West Africa, from which he was abducted in 1767 at the age of sixteen and taken on the &lt;em&gt;Lord Ligonier&lt;/em&gt; to Maryland and sold to a Virginia planter.&lt;br&gt;&lt;br&gt;Haley has talked in Juffure with his own African sixth cousins.  On September 29, 1967, he stood on the dock in Annapolis where his great-great-great-great-grandfather was taken ashore on September 29, 1767.  Now he has written the monumental two-century drama of Kunta Kinte and the six generations who came after him—slaves and freedmen, farmers and blacksmiths, lumber mill workers and Pullman porters, lawyers and architects—and one author.&lt;br&gt;&lt;br&gt;But Haley has done more than recapture the history of his own family. As the first black American writer to trace his origins back to their roots, he has told the story of 25,000,000 Americans of African descent. He has rediscovered for an entire people a rich cultural heritage that slavery took away from them, along with their names and their identities. But &lt;em&gt;Roots&lt;/em&gt; speaks, finally, not just to blacks, or to whites, but to all people and all races everywhere, for the story it tells is one of the most eloquent testimonials ever written to the indomitability of the human spirit.</description>
 <authors>
   <author>
@@ -35,8 +35,8 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1182806085p2/17434.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/17434.Alex_Haley]]></link>
     <average_rating>4.32</average_rating>
-    <ratings_count>153098</ratings_count>
-    <text_reviews_count>4123</text_reviews_count>
+    <ratings_count>153174</ratings_count>
+    <text_reviews_count>4124</text_reviews_count>
   </author>
 </authors>
   <published>1980</published>
@@ -49,8 +49,8 @@
   <spoiler_flag>false</spoiler_flag>
   <spoilers_state>none</spoilers_state>
   <shelves>
-      <shelf name="to-read" exclusive="true" />
       <shelf name="fiction" exclusive="false" />
+      <shelf name="to-read" exclusive="true" />
   </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -87,7 +87,7 @@
   <publication_year>2000</publication_year>
   <publication_month>6</publication_month>
   <average_rating>4.15</average_rating>
-  <ratings_count>34031</ratings_count>
+  <ratings_count>34046</ratings_count>
   <description>Part history, part novel, this book chronicles two great American dynasties over three generations. Though brought together in a friendship that neither jealousy nor violence could shatter, the Hazards and the Mains are torn apart by the storm of events that has divided the nation.</description>
 <authors>
   <author>
@@ -97,7 +97,7 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1342709158p2/5768.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/5768.John_Jakes]]></link>
     <average_rating>4.06</average_rating>
-    <ratings_count>92199</ratings_count>
+    <ratings_count>92239</ratings_count>
     <text_reviews_count>2071</text_reviews_count>
   </author>
 </authors>
@@ -135,7 +135,7 @@
   <id type="integer">1869</id>
   <isbn>0805063897</isbn>
   <isbn13>9780805063899</isbn13>
-  <text_reviews_count type="integer">4374</text_reviews_count>
+  <text_reviews_count type="integer">4373</text_reviews_count>
   <title>Nickel and Dimed: On (Not) Getting by in America</title>
   <image_url>http://s.gr-assets.com/assets/nophoto/book/111x148-6204a98ba2aba2d1aa07b9bea87124f8.png</image_url>
   <small_image_url>http://s.gr-assets.com/assets/nophoto/book/50x75-6121bf4c1f669098041843ec9650ca19.png</small_image_url>
@@ -148,7 +148,7 @@
   <publication_year>2002</publication_year>
   <publication_month>5</publication_month>
   <average_rating>3.58</average_rating>
-  <ratings_count>140293</ratings_count>
+  <ratings_count>140305</ratings_count>
   <description>A bestseller in hardcover, Nickel and Dimed reveals low-wage America in all its tenacity, anxiety, and surprising generosity. Instantly acclaimed for its insight, humor, and passion, this book is changing the way the nation perceives its working poor.</description>
 <authors>
   <author>
@@ -158,8 +158,8 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1395953641p2/1257.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/1257.Barbara_Ehrenreich]]></link>
     <average_rating>3.58</average_rating>
-    <ratings_count>153298</ratings_count>
-    <text_reviews_count>6926</text_reviews_count>
+    <ratings_count>153329</ratings_count>
+    <text_reviews_count>6927</text_reviews_count>
   </author>
 </authors>
   <published>2002</published>
@@ -172,8 +172,8 @@
   <spoiler_flag>false</spoiler_flag>
   <spoilers_state>none</spoilers_state>
   <shelves>
-      <shelf name="to-read" exclusive="true" />
       <shelf name="non-fiction" exclusive="false" />
+      <shelf name="to-read" exclusive="true" />
   </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -197,7 +197,7 @@
   <id type="integer">72657</id>
   <isbn>0826412769</isbn>
   <isbn13>9780826412768</isbn13>
-  <text_reviews_count type="integer">539</text_reviews_count>
+  <text_reviews_count type="integer">541</text_reviews_count>
   <title>Pedagogy of the Oppressed</title>
   <image_url>http://s.gr-assets.com/assets/nophoto/book/111x148-6204a98ba2aba2d1aa07b9bea87124f8.png</image_url>
   <small_image_url>http://s.gr-assets.com/assets/nophoto/book/50x75-6121bf4c1f669098041843ec9650ca19.png</small_image_url>
@@ -210,7 +210,7 @@
   <publication_year>2000</publication_year>
   <publication_month>9</publication_month>
   <average_rating>4.27</average_rating>
-  <ratings_count>9891</ratings_count>
+  <ratings_count>9897</ratings_count>
   <description>First published in Portuguese in 1968, Pedagogy of the Oppressed was translated and published in English in 1970. The methodology of the late Paulo Freire has helped to empower countless impoverished and illiterate people throughout the world. Freire's work has taken on especial urgency in the United States and Western Europe, where the creation of a permanent underclass among the underprivileged and minorities in cities and urban centers is increasingly accepted as the norm. With a substantive new introduction on Freire's life and the remarkable impact of this book by writer and Freire confidant and authority Donaldo Macedo, this anniversary edition of Pedagogy of the Oppressed will inspire a new generation of educators, students, and general readers for years to come.For more information, visit &lt;a href="http://www.pedagogyoftheoppressed.com" target="_blank" rel="nofollow"&gt;www.pedagogyoftheoppressed.com&lt;/a&gt;.</description>
 <authors>
   <author>
@@ -220,8 +220,8 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1221544351p2/41108.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/41108.Paulo_Freire]]></link>
     <average_rating>4.26</average_rating>
-    <ratings_count>11451</ratings_count>
-    <text_reviews_count>742</text_reviews_count>
+    <ratings_count>11456</ratings_count>
+    <text_reviews_count>744</text_reviews_count>
   </author>
 </authors>
   <published>2000</published>
@@ -234,8 +234,8 @@
   <spoiler_flag>false</spoiler_flag>
   <spoilers_state>none</spoilers_state>
   <shelves>
-      <shelf name="to-read" exclusive="true" />
       <shelf name="non-fiction" exclusive="false" />
+      <shelf name="to-read" exclusive="true" />
   </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -259,7 +259,7 @@
   <id type="integer">6452796</id>
   <isbn>1594488843</isbn>
   <isbn13>9781594488849</isbn13>
-  <text_reviews_count type="integer">1746</text_reviews_count>
+  <text_reviews_count type="integer">1747</text_reviews_count>
   <title>Drive: The Surprising Truth About What Motivates Us</title>
   <image_url>http://s.gr-assets.com/assets/nophoto/book/111x148-6204a98ba2aba2d1aa07b9bea87124f8.png</image_url>
   <small_image_url>http://s.gr-assets.com/assets/nophoto/book/50x75-6121bf4c1f669098041843ec9650ca19.png</small_image_url>
@@ -272,7 +272,7 @@
   <publication_year>2009</publication_year>
   <publication_month>12</publication_month>
   <average_rating>3.92</average_rating>
-  <ratings_count>26617</ratings_count>
+  <ratings_count>26639</ratings_count>
   <description>Forget everything you thought you knew about how to motivate people—at work, at school, at home. It's wrong. As Daniel H. Pink (author of&lt;em&gt; To Sell Is Human: The Surprising Truth About Motivating Others&lt;/em&gt;) explains in his paradigm-shattering book &lt;em&gt;Drive&lt;/em&gt;, the secret to high performance and satisfaction in today's world is the deeply human need to direct our own lives, to learn and create new things, and to do better by ourselves and our world.&lt;br&gt;&lt;br&gt; Drawing on four decades of scientific research on human motivation, Pink exposes the mismatch between what science knows and what business does—and how that affects every aspect of our lives. He demonstrates that while the old-fashioned carrot-and-stick approach worked successfully in the 20th century, it's precisely the &lt;em&gt;wrong&lt;/em&gt; way to motivate people for today's challenges. In &lt;em&gt;Drive&lt;/em&gt;, he reveals the three elements of true motivation:&lt;br&gt;&lt;br&gt; *&lt;strong&gt;Autonomy&lt;/strong&gt;—the desire to direct our own lives&lt;br&gt; *&lt;strong&gt;Mastery&lt;/strong&gt;—the urge to get better and better at something that matters&lt;br&gt; *&lt;strong&gt;Purpose&lt;/strong&gt;—the yearning to do what we do in the service of something larger than ourselves&lt;br&gt;&lt;br&gt; Along the way, he takes us to companies that are enlisting new approaches to motivation and introduces us to the scientists and entrepreneurs who are pointing a bold way forward.&lt;br&gt;&lt;br&gt;&lt;em&gt;Drive&lt;/em&gt; is bursting with big ideas—the rare book that will change how you think and transform how you live.</description>
 <authors>
   <author>
@@ -282,8 +282,8 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1243997247p2/96150.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/96150.Daniel_H_Pink]]></link>
     <average_rating>3.92</average_rating>
-    <ratings_count>43318</ratings_count>
-    <text_reviews_count>3907</text_reviews_count>
+    <ratings_count>43347</ratings_count>
+    <text_reviews_count>3909</text_reviews_count>
   </author>
 </authors>
   <published>2009</published>
@@ -334,7 +334,7 @@
   <publication_year>2003</publication_year>
   <publication_month>8</publication_month>
   <average_rating>4.05</average_rating>
-  <ratings_count>10285</ratings_count>
+  <ratings_count>10287</ratings_count>
   <description>"In The Blank Slate, Steven Pinker explores the idea of human nature and its moral, emotional, and political colorings. He shows how many intellectuals have denied the existence of human nature by embracing three linked dogmas: the Blank Slate (the mind has no innate traits), the Noble Savage (people are born good and corrupted by society), and the Ghost in the Machine (each of us has a soul that makes choices free from biology). Each dogma carries a moral burden, so their defenders have engaged in desperate tactics to discredit the scientists who are now challenging them." &lt;br&gt;&lt;br&gt;"Pinker injects calm and rationality into these debates by showing that equality, progress, responsibility, and purpose have nothing to fear from discoveries about a rich human nature. He disarms even the most menacing threats with clear thinking, common sense, and pertinent facts from science and history. Despite its popularity among intellectuals during much of the twentieth century, he argues, the doctrine of the Blank Slate may have done more harm than good. It denies our common humanity and our individual preferences, replaces hardheaded analyses of social problems with feel-good slogans, and distorts our understanding of government, violence, parenting, and the arts." &lt;br&gt;&lt;br&gt;Pinker shows that an acknowledgement of human nature that is grounded in science and common sense, far from being dangerous, can complement insights about the human condition made by millennia of artists and philosophers. All this is done in the style that earned his previous books many prizes and worldwide acclaim: wit, lucidity, and insight into matters great and small.</description>
 <authors>
   <author>
@@ -344,8 +344,8 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1235758085p2/3915.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/3915.Steven_Pinker]]></link>
     <average_rating>4.01</average_rating>
-    <ratings_count>40416</ratings_count>
-    <text_reviews_count>2539</text_reviews_count>
+    <ratings_count>40434</ratings_count>
+    <text_reviews_count>2540</text_reviews_count>
   </author>
 </authors>
   <published>2003</published>
@@ -358,9 +358,9 @@
   <spoiler_flag>false</spoiler_flag>
   <spoilers_state>none</spoilers_state>
   <shelves>
+      <shelf name="to-read" exclusive="true" />
       <shelf name="psych" exclusive="false" />
       <shelf name="linguistics" exclusive="false" />
-      <shelf name="to-read" exclusive="true" />
   </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -397,7 +397,7 @@
   <publication_year>1999</publication_year>
   <publication_month>1</publication_month>
   <average_rating>3.98</average_rating>
-  <ratings_count>8783</ratings_count>
+  <ratings_count>8790</ratings_count>
   <description>In this extraordinary bestseller, Steven Pinker, one of the world's leading cognitive scientists, does for the rest of the mind what he did for language in his 1994 book, &lt;em&gt;The Language Instinct&lt;/em&gt;. He explains what the mind is, how it evolved, and how it allows us to see, think, feel, laugh, interact, enjoy the arts, and ponder the mysteries of life. And he does it with the wit that prompted Mark Ridley to write in the &lt;em&gt;New York Times Book Review&lt;/em&gt;, "No other science writer makes me laugh so much. . . . [Pinker] deserves the superlatives that are lavished on him."  The arguments in the book are as bold as its title. Pinker rehabilitates some unfashionable ideas, such as that the mind is a computer and that human nature was shaped by natural selection, and challenges fashionable ones, such as that passionate emotions are irrational, that parents socialize their children, and that nature is good and modern society corrupting. Winner of the &lt;em&gt;Los Angeles Times Book Prize&lt;/em&gt; A &lt;em&gt;New York Times&lt;/em&gt; Notable Book of the Year and &lt;em&gt;Publishers Weekly&lt;/em&gt; Best Book of 1997 Featured in &lt;em&gt;Time&lt;/em&gt; magazine, the &lt;em&gt;New York Times Magazine&lt;/em&gt;, &lt;em&gt;The New Yorker&lt;/em&gt;, &lt;em&gt;Nature&lt;/em&gt;, Science, &lt;em&gt;Lingua Franca&lt;/em&gt;, and &lt;em&gt;Science Times&lt;/em&gt; Front-page reviews in the &lt;em&gt;Washington Post Book World&lt;/em&gt;, the &lt;em&gt;Boston Globe Book Section&lt;/em&gt;, and the &lt;em&gt;San Diego Union Book Review&lt;/em&gt;</description>
 <authors>
   <author>
@@ -407,8 +407,8 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1235758085p2/3915.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/3915.Steven_Pinker]]></link>
     <average_rating>4.01</average_rating>
-    <ratings_count>40416</ratings_count>
-    <text_reviews_count>2539</text_reviews_count>
+    <ratings_count>40434</ratings_count>
+    <text_reviews_count>2540</text_reviews_count>
   </author>
 </authors>
   <published>1999</published>
@@ -460,7 +460,7 @@
   <publication_year></publication_year>
   <publication_month></publication_month>
   <average_rating>4.05</average_rating>
-  <ratings_count>9237</ratings_count>
+  <ratings_count>9241</ratings_count>
   <description>Steven Pinker es un destacado psicólogo experimental, científico cognitivo y autor de libros de divulgación científica para el público en general. Éste es el caso de &lt;em&gt;El instinto del lenguaje&lt;/em&gt;, un libro que, si bien puede ocasionar algunas dificultades a los lectores legos, está pensado para que todos puedan entender sus puntos principales, no solamente los estudiantes de lingüística.&lt;br&gt;&lt;br&gt;La teoría sobre la que se apoya &lt;em&gt;El instinto del lenguaje&lt;/em&gt; es que los seres humanos poseemos la capacidad innata de comunicarnos mediante el lenguaje, siendo éste una capacidad adquirida mediante la evolución y privativa de nuestra especie. A lo largo del libro, Pinker discute con teorías populares que señalan que el lenguaje es algo cultural, construido por los seres humanos y que se transmite mediante la enseñanza, la existencia de monos que aprendieron lenguaje de señas, la necesidad de corregir los errores de los niños que están aprendiendo a hablar. Recopila diversas pruebas que demuestran lo contrario.&lt;br&gt;&lt;br&gt;Comienza desarrollando su hipótesis a partir de los resultados de años de estudios del lenguaje en los niños. Éstos tienen la capacidad de aprender una lengua independientemente de la calidad del estímulo al que se vean expuestos. Además, no es posible “decidir aprender” a hablar; por el contrario, es inevitable.&lt;br&gt;&lt;br&gt;Pinker también discute que el lenguaje sea producto de la inteligencia humana: numerosos pacientes afásicos –que, no obstante conservar sus facultades mentales intactas, no pueden hilvanar un discurso coherente- le demuestran la disociación entre la facultad del lenguaje y otras facultades mentales. En efecto, Pinker está de acuerdo con la teoría de la modularidad de la mente humana. Es más: para el lenguaje existe un órgano especializado (en realidad, un área del cerebro).&lt;br&gt;&lt;br&gt;La teoría de Pinker, sin embargo, dista de ser aceptada por el conjunto de especialistas en estudios del lenguaje y la mente. Este libro ha generado más de una polémica y el autor cuenta con numerosos detractores.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Fuente: (Mariana) &lt;a href="http://www.blogdelibros.com/el-instinto-del-lenguaje-de-steven-pinker/" target="_blank" rel="nofollow"&gt;http://www.blogdelibros.com/el-instin...&lt;/a&gt;</description>
 <authors>
   <author>
@@ -470,8 +470,8 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1235758085p2/3915.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/3915.Steven_Pinker]]></link>
     <average_rating>4.01</average_rating>
-    <ratings_count>40416</ratings_count>
-    <text_reviews_count>2539</text_reviews_count>
+    <ratings_count>40434</ratings_count>
+    <text_reviews_count>2540</text_reviews_count>
   </author>
 </authors>
   <published></published>
@@ -485,8 +485,8 @@
   <spoilers_state>none</spoilers_state>
   <shelves>
       <shelf name="to-read" exclusive="true" />
-      <shelf name="psych" exclusive="false" />
       <shelf name="linguistics" exclusive="false" />
+      <shelf name="psych" exclusive="false" />
   </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -523,7 +523,7 @@
   <publication_year>2002</publication_year>
   <publication_month>4</publication_month>
   <average_rating>4.07</average_rating>
-  <ratings_count>4136</ratings_count>
+  <ratings_count>4263</ratings_count>
   <description>The Noonday Demon examines depression in personal, cultural, and scientific terms. Drawing on his own struggles with the illness and interviews with fellow sufferers, doctors and scientists, policy makers and politicians, drug designers and philosophers, Andrew Solomon reveals the subtle complexities and sheer agony of the disease. He confronts the challenge of defining the illness and describes the vast range of available medications, the efficacy of alternative treatments, and the impact the malady has on various demographic populations -- around the world and throughout history. He also explores the thorny patch of moral and ethical questions posed by emerging biological explanations for mental illness. With uncommon humanity, candor, wit, and erudition, award-winning author Solomon takes readers on a journey of incom-parable range and resonance into the most pervasive of family secrets. His contribution to our understanding not only of mental illness but also of the human condition is truly stunning.</description>
 <authors>
   <author>
@@ -533,8 +533,8 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1266558323p2/8650.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/8650.Andrew_Solomon]]></link>
     <average_rating>4.14</average_rating>
-    <ratings_count>10766</ratings_count>
-    <text_reviews_count>1513</text_reviews_count>
+    <ratings_count>10776</ratings_count>
+    <text_reviews_count>1514</text_reviews_count>
   </author>
 </authors>
   <published>2002</published>
@@ -572,7 +572,7 @@
   <id type="integer">1713426</id>
   <isbn>006135323X</isbn>
   <isbn13>9780061353239</isbn13>
-  <text_reviews_count type="integer">1936</text_reviews_count>
+  <text_reviews_count type="integer">1937</text_reviews_count>
   <title>Predictably Irrational: The Hidden Forces That Shape Our Decisions</title>
   <image_url>http://s.gr-assets.com/assets/nophoto/book/111x148-6204a98ba2aba2d1aa07b9bea87124f8.png</image_url>
   <small_image_url>http://s.gr-assets.com/assets/nophoto/book/50x75-6121bf4c1f669098041843ec9650ca19.png</small_image_url>
@@ -585,7 +585,7 @@
   <publication_year>2008</publication_year>
   <publication_month>2</publication_month>
   <average_rating>4.04</average_rating>
-  <ratings_count>35053</ratings_count>
+  <ratings_count>35070</ratings_count>
   <description>Why do our headaches persist after taking a one-cent aspirin but disappear when we take a 50-cent aspirin?&lt;br&gt;&lt;br&gt;Why does recalling the Ten Commandments reduce our tendency to lie, even when we couldn't possibly be caught?&lt;br&gt;&lt;br&gt;Why do we splurge on a lavish meal but cut coupons to save twenty-five cents on a can of soup?&lt;br&gt;&lt;br&gt;Why do we go back for second helpings at the unlimited buffet, even when our stomachs are already full?&lt;br&gt;&lt;br&gt;And how did we ever start spending $4.15 on a cup of coffee when, just a few years ago, we used to pay less than a dollar?&lt;br&gt;&lt;br&gt;When it comes to making decisions in our lives, we think we're in control. We think we're making smart, rational choices. But are we?&lt;br&gt;&lt;br&gt;In a series of illuminating, often surprising experiments, MIT behavioral economist Dan Ariely refutes the common assumption that we behave in fundamentally rational ways. Blending everyday experience with groundbreaking research, Ariely explains how expectations, emotions, social norms, and other invisible, seemingly illogical forces skew our reasoning abilities.&lt;br&gt;&lt;br&gt;Not only do we make astonishingly simple mistakes every day, but we make the same "types" of mistakes, Ariely discovers. We consistently overpay, underestimate, and procrastinate. We fail to understand the profound effects of our emotions on what we want, and we overvalue what we already own. Yet these misguided behaviors are neither random nor senseless. They're systematic and predictable--making us "predictably" irrational.&lt;br&gt;&lt;br&gt;From drinking coffee to losing weight, from buying a car to choosing a romantic partner, Ariely explains how to break through these systematic patterns of thought to make better decisions. "Predictably Irrational" will change the way we interact with the world--one small decision at a time.</description>
 <authors>
   <author>
@@ -595,8 +595,8 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1270639083p2/788461.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/788461.Dan_Ariely]]></link>
     <average_rating>4.01</average_rating>
-    <ratings_count>49026</ratings_count>
-    <text_reviews_count>3365</text_reviews_count>
+    <ratings_count>49069</ratings_count>
+    <text_reviews_count>3366</text_reviews_count>
   </author>
 </authors>
   <published>2008</published>
@@ -647,7 +647,7 @@
   <publication_year>1999</publication_year>
   <publication_month>2</publication_month>
   <average_rating>4.30</average_rating>
-  <ratings_count>20826</ratings_count>
+  <ratings_count>20836</ratings_count>
   <description>Great Minds Think Alike&lt;br&gt;It's rare enough to read a good book. Still rarer is a great book that expands not just human understanding but also human thought. Perhaps not as groundbreaking a work of science as Darwin's &lt;em&gt;Origin of Species&lt;/em&gt;, &lt;em&gt;Godel, Escher, Bach&lt;/em&gt; comes close to it in reforming the way we think about the world. If you have read it before, you know its strength (and after 20 years, it is well worth revisiting). If you have not read the book, here is a simple summary of what you've missed. &lt;br&gt;&lt;br&gt;By looking at the brilliant minds of mathematician Kurt Godel, graphic artist M. C. Escher, and composer Johann Sebastian Bach, computer-science and cognitive-science professor Douglas Hofstadter ties together the aesthetic gift of pattern recognition and manipulation with theories on artificial intelligence, human intelligence, and the essence of self-awareness. Does that do the book justice? Not at all; &lt;em&gt;Godel, Escher, Bach&lt;/em&gt; cannot be explained without delving deeply into the structure of the book itself and the analysis of self-representation Hofstadter weaves through his appreciation of the art of Bach, the designs of Escher, and the theories of Godel. &lt;br&gt;&lt;br&gt;&lt;em&gt;Godel, Escher, Bach&lt;/em&gt; is not a simple read. The ideas are complex and the logic subtle. But it is a completely satisfying book, and reading it is one of those rare experiences when you leave feeling smarter than when you started.&lt;br&gt;&lt;br&gt;Greg Sewell</description>
 <authors>
   <author>
@@ -657,7 +657,7 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1265604859p2/3034502.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/3034502.Douglas_R_Hofstadter]]></link>
     <average_rating>4.21</average_rating>
-    <ratings_count>33316</ratings_count>
+    <ratings_count>33333</ratings_count>
     <text_reviews_count>1733</text_reviews_count>
   </author>
 </authors>
@@ -720,8 +720,8 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1241840845p2/34053.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/34053.John_H_McWhorter]]></link>
     <average_rating>3.81</average_rating>
-    <ratings_count>4075</ratings_count>
-    <text_reviews_count>623</text_reviews_count>
+    <ratings_count>4080</ratings_count>
+    <text_reviews_count>626</text_reviews_count>
   </author>
 </authors>
   <published>2003</published>
@@ -759,7 +759,7 @@
   <id type="integer">5297</id>
   <isbn>0375751513</isbn>
   <isbn13>9780375751516</isbn13>
-  <text_reviews_count type="integer">7930</text_reviews_count>
+  <text_reviews_count type="integer">7932</text_reviews_count>
   <title>The Picture of Dorian Gray</title>
   <image_url>http://d.gr-assets.com/books/1320467562m/5297.jpg</image_url>
   <small_image_url>http://d.gr-assets.com/books/1320467562s/5297.jpg</small_image_url>
@@ -772,8 +772,8 @@
   <publication_year>1998</publication_year>
   <publication_month>6</publication_month>
   <average_rating>4.01</average_rating>
-  <ratings_count>377566</ratings_count>
-  <description>The tale of a youth whose features, year after year, retain the same appearance of innocent beauty while the shame of his abhorrent vices becomes mirrored on the features of his portrait.</description>
+  <ratings_count>377733</ratings_count>
+  <description>&lt;strong&gt;﻿Introduction by Jeffrey Eugenides&lt;/strong&gt;&lt;br&gt;  &lt;br&gt;﻿Written in his distinctively dazzling manner, Oscar Wilde’s story of a fashionable young man who sells his soul for eternal youth and beauty is the author’s most popular work. The tale of Dorian Gray’s moral disintegration caused a scandal when it ﬁrst appeared in 1890, but though Wilde was attacked for the novel’s corrupting inﬂuence, he responded that there is, in fact, “a terrible moral in &lt;em&gt;Dorian Gray&lt;/em&gt;.” Just a few years later, the book and the aesthetic/moral dilemma it presented became issues in the trials occasioned by Wilde’s homosexual liaisons, which resulted in his imprisonment. Of Dorian Gray’s relationship to autobiography, Wilde noted in a letter, “Basil Hallward is what I think I am: Lord Henry what the world thinks me: Dorian what I would like to be—in other ages, perhaps.”</description>
 <authors>
   <author>
     <id>3565</id>
@@ -782,8 +782,8 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1357460488p2/3565.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/3565.Oscar_Wilde]]></link>
     <average_rating>4.06</average_rating>
-    <ratings_count>666599</ratings_count>
-    <text_reviews_count>20089</text_reviews_count>
+    <ratings_count>667002</ratings_count>
+    <text_reviews_count>20098</text_reviews_count>
   </author>
 </authors>
   <published>1998</published>
@@ -817,70 +817,6 @@
 </review>
 
     <review>
-  <id>928416988</id>
-    <book>
-  <id type="integer">34494</id>
-  <isbn>0060012382</isbn>
-  <isbn13>9780060012380</isbn13>
-  <text_reviews_count type="integer">1403</text_reviews_count>
-  <title>The Wee Free Men (Discworld, #30) (Tiffany Aching, #1)</title>
-  <image_url>http://d.gr-assets.com/books/1284280817m/34494.jpg</image_url>
-  <small_image_url>http://d.gr-assets.com/books/1284280817s/34494.jpg</small_image_url>
-  <link>http://www.goodreads.com/book/show/34494.The_Wee_Free_Men_Discworld_30_</link>
-  <num_pages>375</num_pages>
-  <format></format>
-  <edition_information/>
-  <publisher>HarperCollins</publisher>
-  <publication_day>15</publication_day>
-  <publication_year>2006</publication_year>
-  <publication_month>8</publication_month>
-  <average_rating>4.22</average_rating>
-  <ratings_count>43668</ratings_count>
-  <description>&lt;em&gt;"Another world is colliding with this one," said the toad. "All the monsters are coming back."&lt;br&gt;&lt;br&gt;"Why?" said Tiffany.&lt;br&gt;&lt;br&gt;"There's no one to stop them."&lt;br&gt;&lt;br&gt;There was silence for a moment.&lt;br&gt;&lt;br&gt;Then Tiffany said, "There's me."&lt;/em&gt;&lt;br&gt;&lt;br&gt;Armed only with a frying pan and her common sense, Tiffany Aching, a young witch-to-be, is all that stands between the monsters of Fairyland and the warm, green Chalk country that is her home. Forced into Fairyland to seek her kidnapped brother, Tiffany allies herself with the Chalk's local Nac Mac Feegle - aka the Wee Free Men - a clan of sheep-stealing, sword-wielding, six-inch-high blue men who are as fierce as they are funny. Together they battle through an eerie and ever-shifting landscape, fighting brutal flying fairies, dream-spinning dromes, and grimhounds - black dogs with eyes of fire and teeth of razors - before ultimately confronting the Queen of the Elves, absolute ruler of a world in which reality intertwines with nightmare. And in the final showdown, Tiffany must face her cruel power alone....&lt;br&gt;&lt;br&gt;In a riveting narrative that is equal parts suspense and humor, Carnegie Medalist Terry Pratchett returns to his internationally popular Discworld with a breathtaking tale certain to leave fans, new and old, enthralled.</description>
-<authors>
-  <author>
-    <id>1654</id>
-    <name>Terry Pratchett</name>
-    <image_url><![CDATA[http://d.gr-assets.com/authors/1235562205p5/1654.jpg]]></image_url>
-    <small_image_url><![CDATA[http://d.gr-assets.com/authors/1235562205p2/1654.jpg]]></small_image_url>
-    <link><![CDATA[http://www.goodreads.com/author/show/1654.Terry_Pratchett]]></link>
-    <average_rating>4.10</average_rating>
-    <ratings_count>1910726</ratings_count>
-    <text_reviews_count>55245</text_reviews_count>
-  </author>
-</authors>
-  <published>2006</published>
-</book>
-
-
-
-  <rating>0</rating>
-  <votes>0</votes>
-  <spoiler_flag>false</spoiler_flag>
-  <spoilers_state>none</spoilers_state>
-  <shelves>
-      <shelf name="to-read" exclusive="true" />
-      <shelf name="fiction" exclusive="false" />
-      <shelf name="fantasy" exclusive="false" />
-      <shelf name="ya" exclusive="false" />
-  </shelves>
-  <recommended_for></recommended_for>
-  <recommended_by></recommended_by>
-  <started_at></started_at>
-  <read_at></read_at>
-  <date_added>Sun May 04 19:49:39 -0700 2014</date_added>
-  <date_updated>Sun May 04 19:49:39 -0700 2014</date_updated>
-  <read_count></read_count>
-  <body>
-      
-  </body>
-  <comments_count>0</comments_count>
-  <url><![CDATA[http://www.goodreads.com/review/show/928416988]]></url>
-  <link><![CDATA[http://www.goodreads.com/review/show/928416988]]></link>
-    <owned>0</owned>
-</review>
-
-    <review>
   <id>943437400</id>
     <book>
   <id type="integer">1768603</id>
@@ -899,7 +835,7 @@
   <publication_year>2008</publication_year>
   <publication_month>4</publication_month>
   <average_rating>3.69</average_rating>
-  <ratings_count>84441</ratings_count>
+  <ratings_count>84464</ratings_count>
   <description>Set in a raw and unromanticized India, &lt;em&gt;The White Tiger&lt;/em&gt;—the first-person confession of a murderer—is as compelling for its subject matter as it is for the voice of its narrator: amoral, cynical, unrepentant, yet deeply endearing.</description>
 <authors>
   <author>
@@ -909,7 +845,7 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1315250024p2/810254.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/810254.Aravind_Adiga]]></link>
     <average_rating>3.66</average_rating>
-    <ratings_count>90447</ratings_count>
+    <ratings_count>90478</ratings_count>
     <text_reviews_count>7183</text_reviews_count>
   </author>
 </authors>
@@ -961,7 +897,7 @@
   <publication_year>2013</publication_year>
   <publication_month>3</publication_month>
   <average_rating>3.93</average_rating>
-  <ratings_count>3105</ratings_count>
+  <ratings_count>3110</ratings_count>
   <description>&lt;strong&gt;The four prinicples that can help us to overcome our brains' natural biases to make better, more informed decisions -- in our lives, careers, families and organizations.&lt;br&gt;&lt;br&gt;&lt;/strong&gt;In &lt;em&gt;Decisive&lt;/em&gt;, Chip Heath and Dan Heath, the bestselling authors of &lt;em&gt;Made to Stick&lt;/em&gt; and &lt;em&gt;Switch&lt;/em&gt;, tackle the thorny problem of how to overcome our natural biases and irrational thinking to make better decisions, about our work, lives, companies and careers.&lt;br&gt;    When it comes to decision making, our brains are flawed instruments.  But given that we are biologically hard-wired to act foolishly and behave irrationally at times, how can we do better?  A number of recent bestsellers have identified how irrational our decision making can be.  But being aware of a bias doesn't correct it, just as knowing that you are nearsighted doesn't help you to see better.  In &lt;em&gt;Decisive&lt;/em&gt;, the Heath brothers, drawing on extensive studies, stories and research, offer specific, practical tools that can help us to think more clearly about our options, and get out of our heads, to improve our decision making, at work and at home.</description>
 <authors>
   <author>
@@ -971,7 +907,7 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1374634334p2/39021.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/39021.Chip_Heath]]></link>
     <average_rating>3.97</average_rating>
-    <ratings_count>42745</ratings_count>
+    <ratings_count>42771</ratings_count>
     <text_reviews_count>3134</text_reviews_count>
   </author>
 </authors>
@@ -1024,7 +960,7 @@
   <publication_year/>
   <publication_month/>
   <average_rating>3.99</average_rating>
-  <ratings_count>280883</ratings_count>
+  <ratings_count>281047</ratings_count>
   <description>The sensual, rebellious Anna renounces a respectable yet stifling marriage for an affair that offers passion even as it ensnares her for destruction. Her story contrasts with that of Levin, a young, self- doubting agnostic who takes a different path to fulfillment. &lt;br&gt;</description>
 <authors>
   <author>
@@ -1034,8 +970,8 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1342945438p2/128382.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/128382.Leo_Tolstoy]]></link>
     <average_rating>4.00</average_rating>
-    <ratings_count>479437</ratings_count>
-    <text_reviews_count>23529</text_reviews_count>
+    <ratings_count>479771</ratings_count>
+    <text_reviews_count>23536</text_reviews_count>
   </author>
 </authors>
   <published/>
@@ -1086,7 +1022,7 @@
   <publication_year>2010</publication_year>
   <publication_month>12</publication_month>
   <average_rating>3.75</average_rating>
-  <ratings_count>486401</ratings_count>
+  <ratings_count>486526</ratings_count>
   <description>Novel by Charles Dickens, published both serially and in book form in 1859. The story is set in the late 18th century against the background of the French Revolution. Although Dickens borrowed from Thomas Carlyle's history, The French Revolution, for his sprawling tale of London and revolutionary Paris, the novel offers more drama than accuracy. The scenes of large-scale mob violence are especially vivid, if superficial in historical understanding. The complex plot involves Sydney Carton's sacrifice of his own life on behalf of his friends Charles Darnay and Lucie Manette. While political events drive the story, Dickens takes a decidedly antipolitical tone, lambasting both aristocratic tyranny and revolutionary excess--the latter memorably caricatured in Madame Defarge, who knits beside the guillotine. The book is perhaps best known for its opening lines, "It was the best of times, it was the worst of times," and for Carton's last speech, in which he says of his replacing Darnay in a prison cell, "It is a far, far better thing that I do, than I have ever done; it is a far, far better rest that I go to, than I have ever known." -- The Merriam-Webster Encyclopedia of Literature&lt;br&gt;It was the best of times, it was the worst of times... These well-known and loved lines begin Dickens's most exciting novel, set during the bloodiest moments of the French Revolution. When former aristocrat Charles Darnay learns that an old family servant needs his help, he abandons his safe haven in England and returns to Paris. But once there, the Revolutionary authorities arrest him not for anything he has done, but for his rich family's crimes. Also in danger: his wife, Lucie, their young daughter, and her aged father, who have followed him across the Channel. &lt;br&gt;&lt;br&gt; This is Dickens’s only novel that lacks comic relief, and one of only two that are not set in nineteenth-century England. It is also unusual in lacking a primary central character. London and Paris are the real protagonists in this tale, much as the cathedral was the 'hero' of Hugo's Notre Dame de Paris.</description>
 <authors>
   <author>
@@ -1096,8 +1032,8 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1387078070p2/239579.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/239579.Charles_Dickens]]></link>
     <average_rating>3.81</average_rating>
-    <ratings_count>1564152</ratings_count>
-    <text_reviews_count>41980</text_reviews_count>
+    <ratings_count>1564986</ratings_count>
+    <text_reviews_count>41992</text_reviews_count>
   </author>
 </authors>
   <published>2010</published>
@@ -1110,8 +1046,8 @@
   <spoiler_flag>false</spoiler_flag>
   <spoilers_state>none</spoilers_state>
   <shelves>
-      <shelf name="to-read" exclusive="true" />
       <shelf name="classics" exclusive="false" />
+      <shelf name="to-read" exclusive="true" />
   </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -1148,7 +1084,7 @@
   <publication_year>2009</publication_year>
   <publication_month>10</publication_month>
   <average_rating>4.12</average_rating>
-  <ratings_count>252988</ratings_count>
+  <ratings_count>253114</ratings_count>
   <description>Written at the end of the Napoleonic Wars, Persuasion is a tale of love, heartache and the determination of one woman as she strives to reignite a lost love. Anne Elliot is persuaded by her friends and family to reject a marriage proposal from Captain Wentworth because he lacks in fortune and rank. More than seven years later, when he returns home from the Navy, Anne realises she still has strong feelings for him, but Wentworth only appears to have eyes for a friend of Anne’s. Moving, tender, but intrinsically ‘Austen’ in style, with its satirical portrayal of the vanity of society in eighteenth-century England, Persuasion celebrates enduring love and hope.</description>
 <authors>
   <author>
@@ -1158,8 +1094,8 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1380085320p2/1265.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/1265.Jane_Austen]]></link>
     <average_rating>4.09</average_rating>
-    <ratings_count>2769144</ratings_count>
-    <text_reviews_count>73776</text_reviews_count>
+    <ratings_count>2770803</ratings_count>
+    <text_reviews_count>73807</text_reviews_count>
   </author>
 </authors>
   <published>2009</published>
@@ -1173,8 +1109,8 @@
   <spoilers_state>none</spoilers_state>
   <shelves>
       <shelf name="to-read" exclusive="true" />
-      <shelf name="favorite-authors" exclusive="false" />
       <shelf name="classics" exclusive="false" />
+      <shelf name="favorite-authors" exclusive="false" />
   </shelves>
   <recommended_for></recommended_for>
   <recommended_by></recommended_by>
@@ -1198,7 +1134,7 @@
   <id type="integer">6514</id>
   <isbn>0061148512</isbn>
   <isbn13>9780061148514</isbn13>
-  <text_reviews_count type="integer">6845</text_reviews_count>
+  <text_reviews_count type="integer">6850</text_reviews_count>
   <title>The Bell Jar</title>
   <image_url>http://d.gr-assets.com/books/1379098702m/6514.jpg</image_url>
   <small_image_url>http://d.gr-assets.com/books/1379098702s/6514.jpg</small_image_url>
@@ -1211,7 +1147,7 @@
   <publication_year>2006</publication_year>
   <publication_month/>
   <average_rating>3.93</average_rating>
-  <ratings_count>283718</ratings_count>
+  <ratings_count>283838</ratings_count>
   <description>A Special Paperback Edition to Commemorate the Fiftieth Anniversary of the Publication of Sylvia Plath's Remarkable Novel&lt;br&gt;&lt;br&gt;Sylvia Plath's shocking, realistic, and intensely emotional novel about a woman falling into the grip of insanity&lt;br&gt;&lt;br&gt;Esther Greenwood is brilliant, beautiful, enormously talented, and successful, but slowly going under—maybe for the last time. In her acclaimed and enduring masterwork, Sylvia Plath brilliantly draws the reader into Esther's breakdown with such intensity that her insanity becomes palpably real, even rational—as accessible an experience as going to the movies. A deep penetration into the darkest and most harrowing corners of the human psyche, &lt;em&gt;The Bell Jar&lt;/em&gt; is an extraordinary accomplishment and a haunting American classic.</description>
 <authors>
   <author>
@@ -1221,8 +1157,8 @@
     <small_image_url><![CDATA[http://d.gr-assets.com/authors/1373572652p2/4379.jpg]]></small_image_url>
     <link><![CDATA[http://www.goodreads.com/author/show/4379.Sylvia_Plath]]></link>
     <average_rating>3.99</average_rating>
-    <ratings_count>344713</ratings_count>
-    <text_reviews_count>10562</text_reviews_count>
+    <ratings_count>344896</ratings_count>
+    <text_reviews_count>10567</text_reviews_count>
   </author>
 </authors>
   <published>2006</published>
@@ -1253,6 +1189,68 @@
   <comments_count>0</comments_count>
   <url><![CDATA[http://www.goodreads.com/review/show/943559837]]></url>
   <link><![CDATA[http://www.goodreads.com/review/show/943559837]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>943622705</id>
+    <book>
+  <id type="integer">11468377</id>
+  <isbn>0374275637</isbn>
+  <isbn13>9780374275631</isbn13>
+  <text_reviews_count type="integer">2088</text_reviews_count>
+  <title>Thinking, Fast and Slow</title>
+  <image_url>http://d.gr-assets.com/books/1317793965m/11468377.jpg</image_url>
+  <small_image_url>http://d.gr-assets.com/books/1317793965s/11468377.jpg</small_image_url>
+  <link>http://www.goodreads.com/book/show/11468377-thinking-fast-and-slow</link>
+  <num_pages>499</num_pages>
+  <format>Hardcover</format>
+  <edition_information/>
+  <publisher>Farrar, Straus and Giroux</publisher>
+  <publication_day>25</publication_day>
+  <publication_year>2011</publication_year>
+  <publication_month>10</publication_month>
+  <average_rating>4.03</average_rating>
+  <ratings_count>46286</ratings_count>
+  <description>In the highly anticipated &lt;em&gt;Thinking, Fast and Slow&lt;/em&gt;, Kahneman takes us on a groundbreaking tour of the mind and explains the two systems that drive the way we think. System 1 is fast, intuitive, and emotional; System 2 is slower, more deliberative, and more logical. Kahneman exposes the extraordinary capabilities—and also the faults and biases—of fast thinking, and reveals the pervasive influence of intuitive impressions on our thoughts and behavior. The impact of loss aversion and overconfidence on corporate strategies, the difficulties of predicting what will make us happy in the future, the challenges of properly framing risks at work and at home, the profound effect of cognitive biases on everything from playing the stock market to planning the next vacation—each of these can be understood only by knowing how the two systems work together to shape our judgments and decisions.&lt;br&gt;&lt;br&gt;Engaging the reader in a lively conversation about how we think, Kahneman reveals where we can and cannot trust our intuitions and how we can tap into the benefits of slow thinking. He offers practical and enlightening insights into how choices are made in both our business and our personal lives—and how we can use different techniques to guard against the mental glitches that often get us into trouble. &lt;em&gt;Thinking, Fast and Slow&lt;/em&gt; will transform the way you think about thinking.</description>
+<authors>
+  <author>
+    <id>72401</id>
+    <name>Daniel Kahneman</name>
+    <image_url><![CDATA[http://d.gr-assets.com/authors/1227145976p5/72401.jpg]]></image_url>
+    <small_image_url><![CDATA[http://d.gr-assets.com/authors/1227145976p2/72401.jpg]]></small_image_url>
+    <link><![CDATA[http://www.goodreads.com/author/show/72401.Daniel_Kahneman]]></link>
+    <average_rating>4.03</average_rating>
+    <ratings_count>43730</ratings_count>
+    <text_reviews_count>2321</text_reviews_count>
+  </author>
+</authors>
+  <published>2011</published>
+</book>
+
+
+
+  <rating>0</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+  <shelves>
+      <shelf name="to-read" exclusive="true" />
+      <shelf name="psych" exclusive="false" />
+  </shelves>
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at></started_at>
+  <read_at></read_at>
+  <date_added>Tue May 20 23:06:02 -0700 2014</date_added>
+  <date_updated>Tue May 20 23:06:02 -0700 2014</date_updated>
+  <read_count></read_count>
+  <body>
+      
+  </body>
+  <comments_count>0</comments_count>
+  <url><![CDATA[http://www.goodreads.com/review/show/943622705]]></url>
+  <link><![CDATA[http://www.goodreads.com/review/show/943622705]]></link>
     <owned>0</owned>
 </review>
 
