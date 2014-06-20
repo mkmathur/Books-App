@@ -3,5 +3,6 @@ require 'sinatra'
 require 'Haml'
 
 get '/' do
-  haml :index
+	@url = "http://www.goodreads.com"
+	haml :index
 end

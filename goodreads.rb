@@ -4,10 +4,11 @@ require 'oauth'
 require 'rexml/document'
 include REXML
 
+# developer key
 KEY = "Yf6QamFRu4dL3dhbz237Sw"
 SECRET = "RrkCTmZIS8zuNsjuNf412vaZmlHHJ17W6pRRVsr4"
 
-# for multiple sessions, need these
+# these are my access token and secret
 MY_ACCESS_TOKEN = "OXjo19O4gThQMIsywElUvw"
 MY_ACCESS_TOKEN_SECRET = "7lJhrwVad6Txy3yC1ws2y0J5tphC9MPaCJ9jaGFro"
 
