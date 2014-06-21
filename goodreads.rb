@@ -3,56 +3,52 @@ require 'bundler/setup'
 require 'oauth'
 require 'rexml/document'
 include REXML
+require './book'
 
-# developer key
-KEY = "Yf6QamFRu4dL3dhbz237Sw"
-SECRET = "RrkCTmZIS8zuNsjuNf412vaZmlHHJ17W6pRRVsr4"
+module Goodreads
 
-# these are my access token and secret
-MY_ACCESS_TOKEN = "OXjo19O4gThQMIsywElUvw"
-MY_ACCESS_TOKEN_SECRET = "7lJhrwVad6Txy3yC1ws2y0J5tphC9MPaCJ9jaGFro"
+	SITE = 'http://www.goodreads.com'
 
-=begin
-# for a single session. todo: save the access token and secret somewhere
-consumer = OAuth::Consumer.new(KEY,
-							SECRET,
-							 :site => "http://www.goodreads.com")
-request_token = consumer.get_request_token
-puts "Visit this URL: " + request_token.authorize_url
-accepted = "n"
-while accepted == 'n' do
-print "Have you authorized me? (y/n) "
-accepted = gets.chomp()
-end
-access_token = request_token.get_access_token
+	class Base
+		def initialize(oauth)
+			@oauth = oauth
+			@access_token = @oauth.access_token
+		end
 
-ACCESS_TOKEN_SECRET = access_token.secret
-ACCESS_TOKEN = access_token.token
+		def books_to_read
+			response = @access_token.post('/review/list?format=xml&v=2', { 'shelf' => 'to-read',})
+			doc = Document.new response.body
+			books = XPath.match( doc, "//book" )
+			books.collect! { |book|
+				# Get title, isbn, isbn13
+				title = book.elements["title"].text
+				isbn = book.elements["isbn"]
+				isbn13 = book.elements["isbn13"]
 
-puts ACCESS_TOKEN
-puts ACCESS_TOKEN_SECRET
-=end
+				# Get the text 
+				isbn = isbn.text unless isbn.nil?
+				isbn13 = isbn13.text unless isbn13.nil?
 
+				Book::Book.new(title, isbn, isbn13)
+			}
+		end
+	end
 
-# in subsequent sessions, we'll rebuild the access token
-consumer = OAuth::Consumer.new(KEY,
-							 SECRET,
-							 :site => 'http://www.goodreads.com')
-access_token = OAuth::AccessToken.new(consumer, MY_ACCESS_TOKEN, MY_ACCESS_TOKEN_SECRET)
+	class Oauth
+		attr_reader :access_token
 
-response = access_token.post('/review/list?format=xml&v=2', {
-		   'shelf' => 'to-read',
-		 })
+		def initialize(dev_key, dev_secret)
+			@key = dev_key
+			@secret = dev_secret
+			@access_token = nil
+		end
 
-# Save the XML to a file so I can look at it
-File.open('xml_doc.xml', 'w') do |f|
-	f.puts response.body
-end
+		def consumer
+			consumer = OAuth::Consumer.new(@key, @secret, :site => SITE )
+		end
 
-doc = Document.new response.body
-
-books = XPath.match( doc, "//book" )
-books.each do |book|
-	puts book.elements["title"].text
-	puts book.elements["isbn"].text
+		def authorize_from_access(access_token, access_token_secret)
+			@access_token = OAuth::AccessToken.new(consumer, access_token, access_token_secret)
+		end
+	end
 end
