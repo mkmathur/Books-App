@@ -24,11 +24,24 @@ before do
 end
 
 get '/' do
+	haml :books if @goodreads
+	haml :index
+end
+
+get '/login/goodreads' do
 	request_token = oauth_consumer.get_request_token
 	session[:request_token] = request_token.token 
 	session[:request_token_secret] = request_token.secret 
-	@url = request_token.authorize_url
-	haml :index
+	redirect request_token.authorize_url
+end
+
+get '/goodreads/access' do
+	request_token = OAuth::RequestToken.new(oauth_consumer, 
+		session[:request_token], session[:request_token_secret])
+	@access_token = request_token.get_access_token
+	session[:access_token] = @access_token.token
+	session[:access_token_secret] = @access_token.secret
+	redirect '/books'
 end
 
 get '/books' do
