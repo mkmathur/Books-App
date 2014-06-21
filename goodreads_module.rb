@@ -3,6 +3,8 @@ require 'bundler/setup'
 require 'oauth'
 require 'rexml/document'
 include REXML
+require './book'
+include Book
 
 module Goodreads
 
@@ -11,14 +13,31 @@ module Goodreads
 	class Base
 		def initialize(oauth)
 			@oauth = o
+			access_token = @oauth.access_token
 		end
 
 		def books_to_read
-			# todo
+			response = access_token.post('/review/list?format=xml&v=2', { 'shelf' => 'to-read',})
+			doc = Document.new response.body
+			books = XPath.match( doc, "//book" )
+			books.collect! { |book|
+				# Get title, isbn, isbn13
+				title = book.elements["title"].text
+				isbn = book.elements["isbn"]
+				isbn13 = book.elements["isbn13"]
+
+				# Get the text 
+				isbn = isbn.text unless isbn.nil?
+				isbn13 = isbn13.text unless isbn.nil?
+
+				Book.new(title, isbn, isbn13)
+			}
 		end
 	end
 
 	class Oauth
+		attr_reader :access_token
+
 		def initialize(dev_key, dev_secret)
 			@key = dev_key
 			@secret = dev_secret
