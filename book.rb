@@ -1,17 +1,20 @@
 module Book
 
-	class Book
-		attr_reader :title, :isbn, :isbn13, :author
+	HEADERS = ["Title", "Author"]
 
-		def initialize(title, isbn=nil, isbn13=nil, author=nil)
-			@title = title
-			@isbn = isbn
-			@isbn13 = isbn13
-			@author = author
+	class Book
+		attr_reader :info
+
+		def initialize(info)
+			@info = info
 		end
 
 		def to_s
-			"Title: #{title}, ISBN: #{isbn}, ISBN13: #{isbn13}"
+			@info["title"]
+		end
+
+		def array 
+			[@info["title"], @info["author"]]
 		end
 	end
 

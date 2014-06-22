@@ -21,17 +21,17 @@ module Goodreads
 			books = XPath.match( doc, "//book" )
 			books.collect! { |book|
 				# Get title, isbn, isbn13
-				title = book.elements["title"].text
-				isbn = book.elements["isbn"]
-				isbn13 = book.elements["isbn13"]
-				author = book.elements["author"]
-
-				# Get the text 
-				isbn = isbn.text unless isbn.nil?
-				isbn13 = isbn13.text unless isbn13.nil?
-				author = author.text unless author.nil?
-
-				Book::Book.new(title, isbn, isbn13, author)
+				info = {}
+				attrs = ["title", "isbn", "isbn13", "author"]
+				attrs.each do |a|
+					info[a] = book.elements[a]
+					if info[a]
+						info[a] = info[a].text
+					else
+						info[a] = ""
+					end
+				end
+				Book::Book.new(info)
 			}
 		end
 	end
