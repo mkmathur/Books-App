@@ -2,6 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'Haml'
 require './goodreads'
+require './book'
 
 def oauth_consumer
 	OAuth::Consumer.new(KEY, SECRET, :site =>  "http://www.goodreads.com")
@@ -14,6 +15,7 @@ configure do
 end
 
 before do
+	puts "before"
 	if session[:access_token]
 		gr_oauth = Goodreads::Oauth.new(KEY, SECRET)
 		gr_oauth.authorize_from_access(session[:access_token], session[:access_token_secret])
@@ -46,5 +48,6 @@ end
 
 get '/books' do
 	redirect '/' unless @goodreads
+	@books = @goodreads.books_to_read
 	haml :books
 end

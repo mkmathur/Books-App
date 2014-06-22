@@ -24,12 +24,14 @@ module Goodreads
 				title = book.elements["title"].text
 				isbn = book.elements["isbn"]
 				isbn13 = book.elements["isbn13"]
+				author = book.elements["author"]
 
 				# Get the text 
 				isbn = isbn.text unless isbn.nil?
 				isbn13 = isbn13.text unless isbn13.nil?
+				author = author.text unless author.nil?
 
-				Book::Book.new(title, isbn, isbn13)
+				Book::Book.new(title, isbn, isbn13, author)
 			}
 		end
 	end

@@ -1,1 +1,5 @@
-%p Your books will be here
+%h1 Your books
+%ol
+- @books.each do |book|
+	%li= book.title
+	
