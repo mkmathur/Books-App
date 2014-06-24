@@ -20,10 +20,8 @@ module Goodreads
 			doc = Document.new response.body
 			books = XPath.match( doc, "//book" )
 			books.collect! { |book|
-				# Get title, isbn, isbn13
 				info = {}
-				attrs = ["title", "isbn", "isbn13", "author"]
-				attrs.each do |a|
+				Book::ATTR.each do |a|
 					info[a] = book.elements[a]
 					if info[a]
 						info[a] = info[a].text
@@ -31,7 +29,14 @@ module Goodreads
 						info[a] = ""
 					end
 				end
-				Book::Book.new(info)
+
+				isbn = book.elements["isbn"]
+				isbn = isbn.text unless isbn.nil?
+
+				isbn13 = book.elements["isbn13"]
+				isbn13 = isbn13.text unless isbn.nil?
+
+				Book::Book.new(info, isbn, isbn13)
 			}
 		end
 	end

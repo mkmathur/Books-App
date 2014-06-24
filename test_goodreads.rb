@@ -1,4 +1,4 @@
-require './goodreads_module'
+require './goodreads'
 require './book'
 include Book
 
