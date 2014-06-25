@@ -15,9 +15,11 @@ module Book
 			@info["title"]
 		end
 
-		def array 
-			[@info["title"], @info["author"]]
+		def array
+			arr = []
+			ATTR.each do |a|
+				arr << info[a]
+			end
 		end
 	end
-
 end
