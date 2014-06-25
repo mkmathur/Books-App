@@ -38,7 +38,8 @@ module Goodreads
 
 				Book::Book.new(info, isbn, isbn13)
 			}
-		end
+		end			
+
 	end
 
 	class Oauth

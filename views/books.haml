@@ -1,5 +1,15 @@
 %h1 Your books
 %ol
-- @books.each do |book|
-	%li= book.info["title"]
+
+%table(id="books" class="display")
+	%thead
+		%tr
+			- @attr.each do |a|
+				%th= a
+	%tbody
+		- @table.each do |row|
+			%tr
+				- row.each do |elem|
+					%td= elem
+
 	

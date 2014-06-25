@@ -24,6 +24,16 @@ before do
 	end
 end
 
+helpers do
+	def table(books)
+		arr = []
+		books.each do |book|
+			arr << book.array
+		end
+		arr
+	end
+end
+
 get '/' do
 	haml :index
 end
@@ -46,6 +56,8 @@ end
 
 get '/books' do
 	redirect '/' unless @goodreads
-	@books = @goodreads.books_to_read
+	books = @goodreads.books_to_read
+	@attr = Book::ATTR
+	@table = table(books) 
 	haml :books
 end
