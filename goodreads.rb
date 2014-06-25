@@ -15,9 +15,14 @@ module Goodreads
 			@access_token = @oauth.access_token
 		end
 
-		def books_to_read
+		def books_to_read(debug=false)
 			response = @access_token.post('/review/list?format=xml&v=2', { 'shelf' => 'to-read',})
 			doc = Document.new response.body
+			if debug
+				File.open("XML_doc.xml", "w") do |file|
+					file.puts doc 
+				end
+			end
 			books = XPath.match( doc, "//book" )
 			books.collect! { |book|
 				info = {}

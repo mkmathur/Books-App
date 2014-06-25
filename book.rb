@@ -20,6 +20,7 @@ module Book
 			ATTR.each do |a|
 				arr << info[a]
 			end
+			arr
 		end
 	end
 end

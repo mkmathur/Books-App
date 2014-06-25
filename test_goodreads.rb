@@ -14,8 +14,8 @@ oauth = Goodreads::Oauth.new(KEY, SECRET)
 oauth.authorize_from_access(MY_ACCESS_TOKEN, MY_ACCESS_TOKEN_SECRET)
 
 gr = Goodreads::Base.new(oauth)
-books = gr.books_to_read
+books = gr.books_to_read(true)
 
 books.each do |book|
-	puts book
+	puts book.array
 end
