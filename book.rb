@@ -1,6 +1,6 @@
 module Book
 
-	ATTR = ["position", "cover", "title", "author", "avg_rating", "shelves", "date_added"]
+	ATTR = ["title", "author", "average rating", "shelves", "date added"]
 
 	class Book
 		attr_reader :info

@@ -2,8 +2,8 @@ require 'rubygems'
 require 'bundler/setup'  
 require 'oauth'
 require 'rexml/document'
-include REXML
 require './book'
+include REXML
 
 module Goodreads
 
@@ -11,19 +11,11 @@ module Goodreads
 
 	class Base
 		def initialize(oauth)
-			@oauth = oauth
-			@access_token = @oauth.access_token
+			@access_token = oauth.access_token
 		end
 
-		def books_to_read(debug=false)
-			response = @access_token.post('/review/list?format=xml&v=2', { 'shelf' => 'to-read',})
-			doc = Document.new response.body
-			if debug
-				File.open("XML_doc.xml", "w") do |file|
-					file.puts doc 
-				end
-			end
-			books = XPath.match( doc, "//book" )
+		def books_to_read
+			books = shelf('to-read')
 			books.collect! { |book|
 				info = {}
 				Book::ATTR.each do |a|
@@ -43,7 +35,46 @@ module Goodreads
 
 				Book::Book.new(info, isbn, isbn13)
 			}
-		end			
+		end	
+
+		def shelf(name, debug=false)
+			response = @access_token.post('/review/list?format=xml&v=2', { 'shelf' => name,})
+			doc = Document.new response.body
+			if debug
+				File.open("XML_doc.xml", "w") do |file|
+					file.puts doc 
+				end
+			end
+			XPath.match( doc, "//book" )
+		end				
+
+	end
+
+	class BookInfo
+		def initialize(xml)
+			@xml = xml
+		end
+
+		def text(key)
+			book.elements[key].text unless book.elements[key].nil?
+		end
+
+		def title
+			text('title')
+		end
+
+		def isbn
+			text('isbn')
+		end
+
+		def isbn13
+			text('isbn13')
+		end
+
+		def author
+			authors = XPath.match(xml, "authors/author/name")
+			puts authors 
+		end
 
 	end
 
