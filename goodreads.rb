@@ -17,6 +17,7 @@ module Goodreads
 		def books_to_read
 			books = shelf('to-read')
 			books.collect! { |book|
+				puts book.class.name
 				info = {}
 				Book::ATTR.each do |a|
 					info[a] = book.elements[a]
@@ -51,12 +52,13 @@ module Goodreads
 	end
 
 	class BookInfo
-		def initialize(xml)
-			@xml = xml
+		# data should be a REXML::Element 
+		def initialize(data)
+			@data = data
 		end
 
 		def text(key)
-			book.elements[key].text unless book.elements[key].nil?
+			data.elements[key].text unless book.elements[key].nil?
 		end
 
 		def title
@@ -75,7 +77,6 @@ module Goodreads
 			authors = XPath.match(xml, "authors/author/name")
 			puts authors 
 		end
-
 	end
 
 	class Oauth

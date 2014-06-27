@@ -1,5 +1,6 @@
 require './goodreads'
 require './book'
+require "test/unit"
 include Book
 
 # developer key
@@ -14,8 +15,34 @@ oauth = Goodreads::Oauth.new(KEY, SECRET)
 oauth.authorize_from_access(MY_ACCESS_TOKEN, MY_ACCESS_TOKEN_SECRET)
 
 gr = Goodreads::Base.new(oauth)
-books = gr.books_to_read
+data = Goodreads::BookInfo.new(gr.shelf('test', true))
 
-gr.books_to_read.each do |b|
-	puts b
+class TestBookInfo < Test::Unit::TestCase
+	def test_title
+		#todo
+	end
+
+	def test_authors
+		#todo
+	end
+
+	def test_isbn
+		#todo
+	end
+
+	def test_isbn13
+		#todo
+	end
+
+	def test_average_rating
+		#todo
+	end
+
+	def test_shelves
+		#todo
+	end
+
+	def test_date_added
+		#todo
+	end
 end
