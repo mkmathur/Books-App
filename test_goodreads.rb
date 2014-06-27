@@ -3,23 +3,29 @@ require './book'
 require "test/unit"
 include Book
 
-# developer key
 KEY = "Yf6QamFRu4dL3dhbz237Sw"
 SECRET = "RrkCTmZIS8zuNsjuNf412vaZmlHHJ17W6pRRVsr4"
 
-# these are my access token and secret
 MY_ACCESS_TOKEN = "OXjo19O4gThQMIsywElUvw"
 MY_ACCESS_TOKEN_SECRET = "7lJhrwVad6Txy3yC1ws2y0J5tphC9MPaCJ9jaGFro"
 
-oauth = Goodreads::Oauth.new(KEY, SECRET)
-oauth.authorize_from_access(MY_ACCESS_TOKEN, MY_ACCESS_TOKEN_SECRET)
+def setupTestShelf
+	oauth = Goodreads::Oauth.new(KEY, SECRET)
+	oauth.authorize_from_access(MY_ACCESS_TOKEN, MY_ACCESS_TOKEN_SECRET)
 
-gr = Goodreads::Base.new(oauth)
-data = Goodreads::BookInfo.new(gr.shelf('test', true))
+	gr = Goodreads::Base.new(oauth)
+	gr.shelf('test', true)
+end
 
 class TestBookInfo < Test::Unit::TestCase
+	def setup
+		@shelf = setupTestShelf
+	end
+
 	def test_title
-		#todo
+		@shelf.books.each do |book|
+			puts book.title 
+		end
 	end
 
 	def test_authors

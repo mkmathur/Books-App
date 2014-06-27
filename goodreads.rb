@@ -15,27 +15,7 @@ module Goodreads
 		end
 
 		def books_to_read
-			books = shelf('to-read')
-			books.collect! { |book|
-				puts book.class.name
-				info = {}
-				Book::ATTR.each do |a|
-					info[a] = book.elements[a]
-					if info[a]
-						info[a] = info[a].text
-					else
-						info[a] = ""
-					end
-				end
-
-				isbn = book.elements["isbn"]
-				isbn = isbn.text unless isbn.nil?
-
-				isbn13 = book.elements["isbn13"]
-				isbn13 = isbn13.text unless isbn.nil?
-
-				Book::Book.new(info, isbn, isbn13)
-			}
+			shelf('to-read').books
 		end	
 
 		def shelf(name, debug=false)
@@ -46,19 +26,30 @@ module Goodreads
 					file.puts doc 
 				end
 			end
-			XPath.match( doc, "//book" )
+			ShelfInfo.new(doc)
 		end				
 
 	end
 
+	class ShelfInfo
+		attr_reader :books
+
+		# data is a REXML::Document
+		def initialize(doc)
+			@books = XPath.match(doc, "//book").collect! { |elem|
+					BookInfo.new(elem)
+				}
+		end
+	end
+
 	class BookInfo
-		# data should be a REXML::Element 
+		# data is the REXML::Element for a single book
 		def initialize(data)
 			@data = data
 		end
 
 		def text(key)
-			data.elements[key].text unless book.elements[key].nil?
+			@data.elements[key].text unless @data.elements[key].nil?
 		end
 
 		def title
@@ -75,7 +66,6 @@ module Goodreads
 
 		def author
 			authors = XPath.match(xml, "authors/author/name")
-			puts authors 
 		end
 	end
 
