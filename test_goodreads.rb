@@ -1,47 +1,43 @@
 require './goodreads'
-require './book'
 require "test/unit"
-include Book
 
-KEY = "Yf6QamFRu4dL3dhbz237Sw"
-SECRET = "RrkCTmZIS8zuNsjuNf412vaZmlHHJ17W6pRRVsr4"
-
-MY_ACCESS_TOKEN = "OXjo19O4gThQMIsywElUvw"
-MY_ACCESS_TOKEN_SECRET = "7lJhrwVad6Txy3yC1ws2y0J5tphC9MPaCJ9jaGFro"
-
-def setupTestShelf
-	oauth = Goodreads::Oauth.new(KEY, SECRET)
-	oauth.authorize_from_access(MY_ACCESS_TOKEN, MY_ACCESS_TOKEN_SECRET)
-
-	gr = Goodreads::Base.new(oauth)
-	gr.shelf('test', true)
-end
-
-class TestBookInfo < Test::Unit::TestCase
+class TestGoodreads < Test::Unit::TestCase
 	def setup
-		@shelf = setupTestShelf
+		doc = Document.new File.read("test.xml")
+		@shelf = Goodreads::Shelf.new(doc)
+		@book = @shelf.books[0]
 	end
 
 	def test_title
-		@shelf.books.each do |book|
-			puts book.title 
-		end
+		assert_equal("Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch", @book.title)
 	end
 
 	def test_authors
-		#todo
+		assert_equal("Terry Pratchett", @book.author)
 	end
 
 	def test_isbn
-		#todo
+		assert_equal("0060853980", @book.isbn)
 	end
 
 	def test_isbn13
-		#todo
+		assert_equal("9780060853983", @book.isbn13)
+	end
+
+	def test_image_url
+		assert_equal("http://d.gr-assets.com/books/1392528568s/12067.jpg", @book.img_url)
+	end
+
+	def test_link
+		assert_equal("http://www.goodreads.com/book/show/12067.Good_Omens", @book.link)
 	end
 
 	def test_average_rating
-		#todo
+		assert_equal("4.27", @book.avg_rating)
+	end
+
+	def test_ratings_count
+		assert_equal("192748", @book.ratings_count)
 	end
 
 	def test_shelves

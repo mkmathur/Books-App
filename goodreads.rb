@@ -2,7 +2,6 @@ require 'rubygems'
 require 'bundler/setup'  
 require 'oauth'
 require 'rexml/document'
-require './book'
 include REXML
 
 module Goodreads
@@ -31,18 +30,18 @@ module Goodreads
 
 	end
 
-	class ShelfInfo
+	class Shelf
 		attr_reader :books
 
 		# data is a REXML::Document
 		def initialize(doc)
 			@books = XPath.match(doc, "//book").collect! { |elem|
-					BookInfo.new(elem)
+					Book.new(elem)
 				}
 		end
 	end
 
-	class BookInfo
+	class Book
 		# data is the REXML::Element for a single book
 		def initialize(data)
 			@data = data
@@ -65,7 +64,23 @@ module Goodreads
 		end
 
 		def author
-			authors = XPath.match(xml, "authors/author/name")
+			text('authors/author/name')
+		end
+
+		def avg_rating
+			text('average_rating')
+		end
+
+		def img_url
+			text('small_image_url')
+		end
+
+		def link
+			text('link')
+		end
+
+		def ratings_count
+			text('ratings_count')
 		end
 	end
 
