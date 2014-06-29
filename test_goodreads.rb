@@ -5,7 +5,7 @@ class TestGoodreads < Test::Unit::TestCase
 	def setup
 		doc = Document.new File.read("test.xml")
 		@shelf = Goodreads::Shelf.new(doc)
-		@book = @shelf.books[0]
+		@book = @shelf[0]
 	end
 
 	def test_title

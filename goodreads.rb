@@ -25,62 +25,46 @@ module Goodreads
 					file.puts doc 
 				end
 			end
-			ShelfInfo.new(doc)
+			Shelf.new(doc)
 		end				
 
 	end
 
 	class Shelf
-		attr_reader :books
-
 		# data is a REXML::Document
 		def initialize(doc)
 			@books = XPath.match(doc, "//book").collect! { |elem|
 					Book.new(elem)
 				}
 		end
+
+		def each(&block)
+			@books.each(&block)
+		end
+
+		def [](index)
+			@books[index]
+		end
 	end
 
 	class Book
+		attr_reader :title, :isbn, :isbn13, :author, :avg_rating, :img_url, :link, :ratings_count
+
 		# data is the REXML::Element for a single book
 		def initialize(data)
 			@data = data
+			@title = text('title')
+			@isbn = text('isbn')
+			@isbn13 = text('isbn13')
+			@author = text('authors/author/name')
+			@avg_rating = text('average_rating')
+			@img_url = text('small_image_url')
+			@link = text('link')
+			@ratings_count = text('ratings_count')
 		end
 
 		def text(key)
 			@data.elements[key].text unless @data.elements[key].nil?
-		end
-
-		def title
-			text('title')
-		end
-
-		def isbn
-			text('isbn')
-		end
-
-		def isbn13
-			text('isbn13')
-		end
-
-		def author
-			text('authors/author/name')
-		end
-
-		def avg_rating
-			text('average_rating')
-		end
-
-		def img_url
-			text('small_image_url')
-		end
-
-		def link
-			text('link')
-		end
-
-		def ratings_count
-			text('ratings_count')
 		end
 	end
 
