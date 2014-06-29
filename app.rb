@@ -41,12 +41,12 @@ get '/goodreads/access' do
 	@access_token = request_token.get_access_token
 	session[:access_token] = @access_token.token
 	session[:access_token_secret] = @access_token.secret
-	redirect '/books'
+	redirect '/books?shelf=to-read'
 end
 
 get '/books' do
 	redirect '/' unless @goodreads
-	shelf = @goodreads.books_to_read
+	shelf = @goodreads.shelf(params[:shelf])
 	@headers = View::Table::HEADERS 
 	@table = View::Table.new(shelf)
 	haml :books
