@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'Haml'
 require './goodreads'
-require './book'
+require './view'
 
 def oauth_consumer
 	OAuth::Consumer.new(KEY, SECRET, :site =>  "http://www.goodreads.com")
@@ -21,16 +21,6 @@ before do
 		@goodreads = Goodreads::Base.new(gr_oauth)
 	else
 		@goodreads = nil
-	end
-end
-
-helpers do
-	def table(books)
-		arr = []
-		books.each do |book|
-			arr << book.array
-		end
-		arr
 	end
 end
 
@@ -56,8 +46,8 @@ end
 
 get '/books' do
 	redirect '/' unless @goodreads
-	books = @goodreads.books_to_read
-	@attr = Book::ATTR
-	@table = table(books) 
+	shelf = @goodreads.books_to_read
+	@headers = View::Table::HEADERS 
+	@table = View::Table.new(shelf)
 	haml :books
 end

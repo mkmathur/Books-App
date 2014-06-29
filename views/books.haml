@@ -4,7 +4,7 @@
 %table(id="books" class="display")
 	%thead
 		%tr
-			- @attr.each do |a|
+			- @headers.each do |a|
 				%th= a
 	%tbody
 		- @table.each do |row|

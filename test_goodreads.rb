@@ -3,7 +3,7 @@ require "test/unit"
 
 class TestGoodreads < Test::Unit::TestCase
 	def setup
-		doc = Document.new File.read("test.xml")
+		doc = Document.new File.read("data.xml")
 		@shelf = Goodreads::Shelf.new(doc)
 		@book = @shelf[0]
 	end

@@ -14,7 +14,7 @@ module Goodreads
 		end
 
 		def books_to_read
-			shelf('to-read').books
+			shelf('to-read')
 		end	
 
 		def shelf(name, debug=false)
