@@ -4,12 +4,14 @@
 %table(id="books" class="display")
 	%thead
 		%tr
-			- @headers.each do |a|
-				%th= a
+			- @headers.each do |label|
+				%th= label
 	%tbody
-		- @table.each do |row|
+		- @view.each do |row|
 			%tr
-				- row.each do |elem|
+				%td  
+					%a(href="#{row.gr_url}")= row.title
+				- row.data.each do |elem|
 					%td= elem
 
 	

@@ -47,7 +47,7 @@ end
 get '/books' do
 	redirect '/' unless @goodreads
 	shelf = @goodreads.shelf(params[:shelf])
-	@headers = View::Table::HEADERS 
-	@table = View::Table.new(shelf)
+	@headers = View::Base::HEADERS 
+	@view = View::Base.new(shelf)
 	haml :books
 end
