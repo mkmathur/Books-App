@@ -1,14 +1,20 @@
 !!!
 %html
-	%head
-		%title Book Bot
-		%link(rel="stylesheet" href="css/style.css")
-		%script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
-
-	%body
-		#wrapper
-			#header
-				%h1 Book Bot
-				%h2 Connecting Goodreads with your library
-			#content
-				=yield
+    %head
+        %title Book Bot
+        %link(rel="stylesheet" href="css/style.css")
+        %script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
+        <!-- DataTables CSS -->
+        %link(rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.0/css/jquery.dataTables.css")
+        <!-- jQuery -->
+        %script(type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js")
+        <!-- DataTables -->
+        %script(type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.0/js/jquery.dataTables.js")
+        %script(type="text/javascript" src="scripts/table.js")
+    %body
+        #wrapper
+            #header
+                %h1 Book Bot
+                %h2 Connecting Goodreads with your library
+            #content
+                =yield
