@@ -2,7 +2,7 @@ require './goodreads'
 
 module View
 	class Base
-		HEADERS =  ["title", "author", "average rating", "num ratings"]
+		HEADERS =  ["cover", "title", "author", "average rating", "num ratings"]
 
 		# Takes a Goodreads::Shelf
 		def initialize(shelf)

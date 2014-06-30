@@ -9,6 +9,8 @@
 	%tbody
 		- @view.each do |row|
 			%tr
+				%td
+					%img(src="#{row.img_url}")
 				%td  
 					%a(href="#{row.gr_url}")= row.title
 				- row.data.each do |elem|
