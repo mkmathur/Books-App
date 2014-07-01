@@ -11,7 +11,7 @@
 				%td
 					%img(src="#{row.img_url}")
 				%td  
-					%a(href="#{row.gr_url}")= row.title
+					%a.book-title(href="#{row.gr_url}")= row.title
 				- row.data.each do |elem|
 					%td= elem
 
