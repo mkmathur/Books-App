@@ -9,8 +9,8 @@ module Goodreads
 	SITE = 'http://www.goodreads.com'
 
 	class Base
-		def initialize(oauth)
-			@access_token = oauth.access_token
+		def initialize(session)
+			@access_token = session.access_token
 		end
 
 		def books_to_read
@@ -65,24 +65,6 @@ module Goodreads
 
 		def text(key)
 			@data.elements[key].text unless @data.elements[key].nil?
-		end
-	end
-
-	class Oauth
-		attr_reader :access_token
-
-		def initialize(dev_key, dev_secret)
-			@key = dev_key
-			@secret = dev_secret
-			@access_token = nil
-		end
-
-		def consumer
-			consumer = OAuth::Consumer.new(@key, @secret, :site => SITE )
-		end
-
-		def authorize_from_access(access_token, access_token_secret)
-			@access_token = OAuth::AccessToken.new(consumer, access_token, access_token_secret)
 		end
 	end
 end

@@ -3,6 +3,8 @@ require 'sinatra'
 require 'Haml'
 require './goodreads'
 require './view'
+require './session'
+include Session
 
 def oauth_consumer
 	OAuth::Consumer.new(KEY, SECRET, :site =>  "http://www.goodreads.com")
@@ -16,7 +18,7 @@ end
 
 before do
 	if session[:access_token]
-		gr_oauth = Goodreads::Oauth.new(KEY, SECRET)
+		gr_oauth = Session::Base.new(Goodreads::SITE, KEY, SECRET)
 		gr_oauth.authorize_from_access(session[:access_token], session[:access_token_secret])
 		@goodreads = Goodreads::Base.new(gr_oauth)
 	else
