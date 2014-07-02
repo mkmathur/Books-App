@@ -18,9 +18,9 @@ end
 
 before do
 	if session[:access_token]
-		gr_oauth = Session::Base.new(Goodreads::SITE, KEY, SECRET)
-		gr_oauth.authorize_from_access(session[:access_token], session[:access_token_secret])
-		@goodreads = Goodreads::Base.new(gr_oauth)
+		gr_session = Session::Base.new(Goodreads::SITE, KEY, SECRET)
+		gr_session.authorize_from_access(session[:access_token], session[:access_token_secret])
+		@goodreads = Goodreads::Base.new(gr_session)
 	else
 		@goodreads = nil
 	end
@@ -48,6 +48,8 @@ end
 
 get '/books' do
 	redirect '/' unless @goodreads
+	@js = ["//cdn.datatables.net/1.10.0/js/jquery.dataTables.js", "scripts/table.js"]
+	@css = ["//cdn.datatables.net/1.10.0/css/jquery.dataTables.css"]
 	shelf = @goodreads.shelf(params[:shelf])
 	@headers = View::Base::HEADERS 
 	@view = View::Base.new(shelf)

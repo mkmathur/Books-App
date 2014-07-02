@@ -6,13 +6,13 @@
 		%meta(name="viewport" content="width=device-width, initial-scale=1")
 		%link(rel="stylesheet" href="css/style.css")
 		%script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
-		<!-- DataTables CSS -->
-		%link(rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.0/css/jquery.dataTables.css")
-		<!-- jQuery -->
 		%script(type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js")
-		<!-- DataTables -->
-		%script(type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.0/js/jquery.dataTables.js")
-		%script(type="text/javascript" src="scripts/table.js")
+		- if @js
+			- @js.each do |script|
+				%script{type: "text/javascript", charset: "utf8", src: script}
+		- if @css
+			- @css.each do |style|
+				%link{rel: "stylesheet", href: style}
 	%body
 		#wrapper
 			#header
