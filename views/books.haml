@@ -14,5 +14,7 @@
 					%a.book-title(href="#{row.gr_url}")= row.title
 				- row.data.each do |elem|
 					%td= elem
+				%td
+					%button{class: "pure-button"} Borrow
 
 	
