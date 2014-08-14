@@ -6,21 +6,15 @@ require './view'
 require './session'
 include Session
 
-def oauth_consumer
-	OAuth::Consumer.new(KEY, SECRET, :site =>  "http://www.goodreads.com")
-end
-
 configure do
 	enable :sessions
-	KEY = "Yf6QamFRu4dL3dhbz237Sw"
-	SECRET = "RrkCTmZIS8zuNsjuNf412vaZmlHHJ17W6pRRVsr4"
 end
 
 before do
+	@gr_session = Session::Base.new(Goodreads::SITE, Goodreads::KEY, Goodreads::SECRET)
 	if session[:access_token]
-		gr_session = Session::Base.new(Goodreads::SITE, KEY, SECRET)
-		gr_session.authorize_from_access(session[:access_token], session[:access_token_secret])
-		@goodreads = Goodreads::Base.new(gr_session)
+		@gr_session.authorize_from_access(session[:access_token], session[:access_token_secret])
+		@goodreads = Goodreads::Base.new @gr_session
 	else
 		@goodreads = nil
 	end
@@ -31,14 +25,14 @@ get '/' do
 end
 
 get '/login/goodreads' do
-	request_token = oauth_consumer.get_request_token
+	request_token = @gr_session.consumer.get_request_token
 	session[:request_token] = request_token.token 
 	session[:request_token_secret] = request_token.secret 
 	redirect request_token.authorize_url
 end
 
 get '/goodreads/access' do
-	request_token = OAuth::RequestToken.new(oauth_consumer, 
+	request_token = OAuth::RequestToken.new(@gr_session.consumer, 
 		session[:request_token], session[:request_token_secret])
 	@access_token = request_token.get_access_token
 	session[:access_token] = @access_token.token

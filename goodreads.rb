@@ -7,15 +7,13 @@ include REXML
 module Goodreads
 
 	SITE = 'http://www.goodreads.com'
+	KEY = "Yf6QamFRu4dL3dhbz237Sw"
+	SECRET = "RrkCTmZIS8zuNsjuNf412vaZmlHHJ17W6pRRVsr4"
 
 	class Base
 		def initialize(session)
 			@access_token = session.access_token
 		end
-
-		def books_to_read
-			shelf('to-read')
-		end	
 
 		def shelf(name, debug=false)
 			response = @access_token.post('/review/list?format=xml&v=2', { 'shelf' => name,})
