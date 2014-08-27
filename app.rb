@@ -1,6 +1,5 @@
-require 'rubygems'
 require 'sinatra'
-require 'Haml'
+require 'haml'
 require './goodreads'
 require './view'
 require './session'
