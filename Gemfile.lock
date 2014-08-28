@@ -4,6 +4,7 @@ GEM
     haml (4.0.5)
       tilt
     hashie (3.3.1)
+    oauth (0.4.7)
     omniauth (1.2.2)
       hashie (>= 1.2, < 4)
       rack (~> 1.0)
@@ -21,5 +22,6 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  oauth
   omniauth
   sinatra
