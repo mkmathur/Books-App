@@ -2,6 +2,5 @@
 source "https://rubygems.org"
 
 gem 'sinatra'
-gem 'Haml'
+gem 'haml'
 gem 'omniauth'
-gem 'rexml/document'
