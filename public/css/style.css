@@ -1,13 +1,4 @@
-#logo {
-	height: 60px;
-	width: auto
-}
-
-#footer p {
+.muted {
 	color: gray;
 }
 
-.book-title {
-	color: black;
-	text-decoration: none;
-}

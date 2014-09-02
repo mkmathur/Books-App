@@ -20,6 +20,7 @@ before do
 end
 
 get '/' do
+	@css = ["css/landing.css"]
 	haml :index
 end
 
@@ -42,7 +43,7 @@ end
 get '/books' do
 	redirect '/' unless @goodreads
 	@js = ["//cdn.datatables.net/1.10.0/js/jquery.dataTables.js", "scripts/table.js"]
-	@css = ["//cdn.datatables.net/1.10.0/css/jquery.dataTables.css"]
+	@css = ["//cdn.datatables.net/1.10.0/css/jquery.dataTables.css", "css/books.css"]
 	shelf = @goodreads.shelf(params[:shelf])
 	@headers = View::Base::HEADERS 
 	@view = View::Base.new(shelf)

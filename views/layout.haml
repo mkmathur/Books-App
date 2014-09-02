@@ -2,11 +2,16 @@
 %html
 	%head
 		%title Book Bot
+
 		%link(rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css")
 		%meta(name="viewport" content="width=device-width, initial-scale=1")
+
+		%link(rel="stylesheet" href="css/layout.css")
 		%link(rel="stylesheet" href="css/style.css")
+
 		%script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
 		%script(type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js")
+
 		- if @js
 			- @js.each do |script|
 				%script{type: "text/javascript", charset: "utf8", src: script}
@@ -14,23 +19,15 @@
 			- @css.each do |style|
 				%link{rel: "stylesheet", href: style}
 	%body
-		#wrapper
-			#header
-				.pure-g
-					.pure-u-1-6
-					.pure-u-2-3
-						%div(class="pure-menu pure-menu-open pure-menu-horizontal")
-							%a(href="/" class="pure-menu-heading") Book Bot
-					.pure-u-1-6	
-			#content
+		.wrapper
+			.header					
+				%div(class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed")
+					%a(href="/" class="pure-menu-heading") Book Bot
+			.content
 				.pure-g
 					.pure-u-1-6
 					.pure-u-2-3
 						=yield
 					.pure-u-1-6
-			#footer
-				.pure-g
-					.pure-u-1-6
-					.pure-u-2-3
-						%p Powered by Goodreads
-					.pure-u-1-6
+			.footer
+				%p.muted.content Powered by Goodreads
