@@ -1,8 +1,9 @@
 !!!
-#login
-	%p Log in with
-	%a(href='/login/goodreads')
-		%img#logo(src="/images/goodreads_logo.jpg")
-	%br
-	%a(href='/goodreads/access')
-		Click here if Goodreads has been authorized. 
+.splash
+	%h1.splash-heading
+		Borrow a Book
+	%p.splash-subhead
+		Connecting Goodreads with Your Library
+	%a.pure-button.pure-button-primary(href='/login/goodreads')
+		Login with Goodreads
+	
